@@ -49,6 +49,11 @@ function App() {
     );
   }
 
+  function newGame() {
+    setDice(allNewDice());
+    setTenzies(false);
+  }
+
   const diceElements = dice.map((die) => (
     <Die
       key={die.id}
@@ -67,9 +72,15 @@ function App() {
         current value between rolls.
       </p>
       <div className="dice-container">{diceElements}</div>
-      <button className="roll" onClick={rollDice}>
-        Roll
-      </button>
+      {tenzies ? (
+        <button className="roll" onClick={newGame}>
+          New Game?
+        </button>
+      ) : (
+        <button className="roll" onClick={rollDice}>
+          Roll
+        </button>
+      )}
     </main>
   );
 }

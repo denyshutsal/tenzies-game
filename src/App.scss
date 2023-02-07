@@ -30,7 +30,7 @@ $roll-btn-clr: #fff;
 
 .roll {
   height: 50px;
-  width: 100px;
+  min-width: 150px;
   border: none;
   border-radius: 6px;
   background-color: $roll-btn-bg-clr;
