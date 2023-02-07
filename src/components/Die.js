@@ -8,7 +8,7 @@ export default function Die(props) {
   }
 
   return (
-    <div className={className}>
+    <div className={className} onClick={props.holdDice}>
       <span className="die__text">{props.value}</span>
     </div>
   );
