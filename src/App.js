@@ -49,7 +49,12 @@ function App() {
 
   return (
     <main className="main">
-      <div className="dice-container main__dice">{diceElements}</div>
+      <h1 className="main__title">Tenzies</h1>
+      <p className="main__instructions">
+        Roll until all dice are the same. Click each die to freeze it at its
+        current value between rolls.
+      </p>
+      <div className="dice-container">{diceElements}</div>
       <button className="roll" onClick={rollDice}>
         Roll
       </button>

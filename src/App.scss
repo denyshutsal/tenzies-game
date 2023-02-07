@@ -3,18 +3,22 @@ $roll-btn-bg-clr: #5035ff;
 $roll-btn-clr: #fff;
 
 .main {
+  width: min-content;
   background-color: $main-bg-clr;
-  height: 400px;
-  max-width: 800px;
   border-radius: 5px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 
-  &__dice {
-    margin-bottom: 30px;
+  &__title {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  &__instructions {
+    margin: 0;
   }
 }
 
