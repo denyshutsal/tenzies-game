@@ -11,7 +11,11 @@ $die-bg-clr: #fff;
   border-radius: 10px;
   cursor: pointer;
 
-  &__tezt {
+  &--selected {
+    background-color: #59e391;
+  }
+
+  &__text {
     font-size: 2rem;
   }
 }
